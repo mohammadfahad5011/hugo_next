@@ -1,11 +1,13 @@
 import Image from "next/image";
 
 import Hero from "./ui/Hero";
+import Experience from "./ui/Experience";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <Experience />
     </main>
   );
 }
