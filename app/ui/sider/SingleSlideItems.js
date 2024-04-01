@@ -6,8 +6,8 @@ import slide_1 from "../../../public/images/slide-1.jpg";
 const SingleSlideItems = () => {
   return (
     <div className="grid grid-cols-12">
-      <div className="col-span-1"></div>
-      <div className="col-span-3">
+      <div className="lg:col-span-1"></div>
+      <div className="col-span-12 lg:col-span-3 order-2 md:order-1">
         <div className="flex h-full flex-col justify-between">
           <h2 className="mt-[100px] text-[2.8em] leading-[1.4] font-semibold">
             No. 4 King Junior Suite
@@ -29,7 +29,8 @@ const SingleSlideItems = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-8">
+
+      <div className="col-span-12 lg:col-span-8 order-1 md:order-2">
         <Image
           src={slide_1}
           alt="Picture of the author"
