@@ -2,7 +2,7 @@ import React from "react";
 
 const SingleFacilities = () => {
   return (
-    <div className="flex items-center justify-center flex-col col-span-4">
+    <div className="flex items-center justify-center flex-col md:col-span-4 col-span-6">
       <span className="w-[50px] h-[50px] mb-3">
         <img
           src="public/images/icons/champagne-1.svg"

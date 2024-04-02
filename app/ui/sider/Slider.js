@@ -56,7 +56,7 @@ export default function App() {
   };
 
   return (
-    <div className="mb-[200px] relative">
+    <div className="mb-[100px] lg:mb-[200px] relative bg-[#F6F6F6]">
       <Swiper
         ref={swiperRef}
         navigation={{
@@ -67,7 +67,7 @@ export default function App() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-12">
+            <div className="grid grid-cols-12 bg-[#f6f6f6]">
               <div className="md:col-span-1 md:order-1"></div>
               <div className="col-span-12 md:col-span-3 order-2 md:order-2">
                 <div className="flex pl-10 md:pl-0 gap-y-10 md:gap-y-6 h-full flex-col justify-between items-start">

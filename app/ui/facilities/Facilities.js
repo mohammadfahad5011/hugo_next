@@ -28,7 +28,7 @@ const Facilities = () => {
           {facilitiesData.map((facility, index) => (
             <div
               key={index}
-              className="flex items-center justify-center flex-col col-span-4"
+              className="flex items-center justify-center flex-col md:col-span-4 col-span-6"
             >
               <span className="w-[50px] h-[50px] mb-3">
                 <Image

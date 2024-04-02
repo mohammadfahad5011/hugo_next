@@ -2,10 +2,10 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <section className="py-[100px] relative">
+    <section className="md:pt-[100px] pt-20 md:pb-[100px] pb-0 relative">
       <div className="container-fluid">
-        <div className="grid justify-end mr-[120px]">
-          <div className="max-w-[530px] w-full">
+        <div className="grid md:justify-end lg:mr-[120px] md:mr-20 mr-10 md:ml-0 ml-10">
+          <div className="lg:max-w-[530px] md:max-w-[380px] max-w-full w-full">
             <h2 className="text-[2.1em] font-bold mb-2">
               Beautiful sleeping quarters combined with the City's best bars,
               restaurants and experiences.
@@ -29,7 +29,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="shape h-[300px] w-[46%] border-t-[20px] border-r-[20px] border-[#bfb8b0] absolute left-0 bottom-0 z-0"></div>
+      <div className="shape md:h-[300px] h-[100px] lg:w-[46%] md:w-[30%] w-[60%] border-t-[20px] border-r-[20px] border-[#bfb8b0] md:absolute relative left-0 bottom-0 -z-10 md:mt-0 mt-12"></div>
     </section>
   );
 };
