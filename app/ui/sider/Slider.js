@@ -9,16 +9,12 @@ import SingleSlideItemsr from "./SingleSlideItems";
 import Image from "next/image";
 import slide_1 from "../../../public/images/slide-1.jpg";
 
+// font awasome css
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 // components/MyComponent.js
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
-// Import Swiper core and required modules
-import SwiperCore, { Navigation } from "swiper";
-// Initialize Swiper core modules
-SwiperCore.use([Navigation]);
 
 export default function App() {
   const swiperRef = React.useRef(null);
