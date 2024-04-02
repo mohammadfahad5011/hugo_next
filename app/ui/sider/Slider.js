@@ -49,8 +49,8 @@ export default function App() {
           <div className="grid grid-cols-12">
             <div className="md:col-span-1 md:order-1"></div>
             <div className="col-span-12 md:col-span-3 order-2 md:order-2">
-              <div className="flex h-full flex-col justify-between items-start">
-                <h2 className="text-left mt-[100px] text-[2em] lg:text-[2.8em] leading-[1.4] font-semibold">
+              <div className="flex pl-10 md:pl-0 gap-y-10 md:gap-y-6 h-full flex-col justify-between items-start">
+                <h2 className="text-left mt-[70px]  lg:mt-[100px] text-[2em] lg:text-[2.8em] leading-[1.4] font-semibold">
                   No. 4 King Junior Suite
                 </h2>
                 <div class="group flex gap-x-2 items-center">
@@ -83,10 +83,10 @@ export default function App() {
                 placeholder="blur"
               />
 
-              <div className="absolute w-full -bottom-14 md:-bottom-12 md:right-20 z-10 ">
+              <div className="absolute w-full md:w-auto left-4 md:left-0 md:right-20 -bottom-10 md:-bottom-12 z-10 ">
                 <div className="flex -mt-6  relative justify-start md:justify-end z-10">
                   <div
-                    className="custom-prev border-[1.5px] border-[#3b3b3b] px-6 py-3 md:px-7 md:py-5"
+                    className="custom-prev border-[1.5px] border-[#3b3b3b] px-6 py-4 md:px-7 md:py-5"
                     onClick={goPrev}
                   >
                     <FontAwesomeIcon
@@ -95,7 +95,7 @@ export default function App() {
                     />
                   </div>
                   <div
-                    className="custom-next border-[1.5px] border-[#3b3b3b] px-6 py-3 md:px-7 md:py-5"
+                    className="custom-next border-[1.5px] border-[#3b3b3b] px-6 py-4 md:px-7 md:py-5"
                     onClick={goNext}
                   >
                     <FontAwesomeIcon
