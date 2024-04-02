@@ -54,12 +54,17 @@ const Navbar = () => {
           {open && (
             <ul className="absolute z-50 bg-[#F6F6F6] left-0 right-0 top-full w-full grid grid-cols-12">
               <li className="col-span-6 py-10 border-b-[1px] border-r-[1px] border-[#3b3b3b] text-center">
-                <Link href="/rooms" className="text-[#979797] uppercase block">
+                <Link
+                  href="/rooms"
+                  onClick={() => setOpen(!open)}
+                  className="text-[#979797] uppercase block"
+                >
                   rooms
                 </Link>
               </li>
               <li className="col-span-6 py-10 border-b-[1px]  border-[#3b3b3b] text-center">
                 <Link
+                  onClick={() => setOpen(!open)}
                   href="/location"
                   className="text-[#979797] uppercase block"
                 >
@@ -67,12 +72,17 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="col-span-6 py-10 border-b-[1px] border-r-[1px] border-[#3b3b3b] text-center">
-                <Link href="/about" className="text-[#979797] uppercase block">
+                <Link
+                  onClick={() => setOpen(!open)}
+                  href="/about"
+                  className="text-[#979797] uppercase block"
+                >
                   about
                 </Link>
               </li>
               <li className="col-span-6 py-10 border-b-[1px]  border-[#3b3b3b] text-center">
                 <Link
+                  onClick={() => setOpen(!open)}
                   href="/concierge"
                   className="text-[#979797] uppercase block"
                 >
@@ -81,6 +91,7 @@ const Navbar = () => {
               </li>
               <li className="col-span-6 py-10 border-b-[1px] border-r-[1px] border-[#3b3b3b] text-center">
                 <Link
+                  onClick={() => setOpen(!open)}
                   href="/contact"
                   className="text-[#979797] uppercase block"
                 >
@@ -134,7 +145,7 @@ const Navbar = () => {
 
               <button
                 onClick={() => setOpen(!open)}
-                className="lg:hidden block text-[#979797] "
+                className="md:hidden block text-[#979797] "
               >
                 MENU
               </button>
