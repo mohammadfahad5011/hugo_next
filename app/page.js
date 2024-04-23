@@ -1,21 +1,22 @@
 import Image from "next/image";
+import HeroRe from "./ui/HeroRe";
 
-import Hero from "./ui/Hero";
 import Experience from "./ui/Experience";
 import Slider from "./ui/sider/Slider";
 import Facilities from "./ui/facilities/Facilities";
-import Contact from "./ui/Contact";
-import Footer from "./ui/Footer";
+import home from "../public/images/home.jpg";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HeroRe
+        title="Modern luxury hotel concept in the heart of Canterbury."
+        subTitle=""
+        imageSrc={home}
+      />
       <Experience />
       <Slider />
       <Facilities />
-      <Contact />
-      <Footer />
     </main>
   );
 }
