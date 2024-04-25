@@ -1,3 +1,9 @@
+import SliderRoom from "../ui/sider/SliderRoom";
+
 export default function Page() {
-  return <p>rooms Page</p>;
+  return (
+    <>
+      <SliderRoom />
+    </>
+  );
 }
